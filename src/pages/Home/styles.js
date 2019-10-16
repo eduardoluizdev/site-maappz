@@ -5,6 +5,11 @@ export const Bgwrapper = styled.section`
     background: url(${bg01}) center top no-repeat;
     width: 100%;
     min-height: 400px;
+
+    .bg-dif{
+        background-position: center -800px;
+        padding-bottom: 20px;
+    }
 `;
 
 export const Flexcontainer = styled.div`
@@ -227,4 +232,138 @@ export const BoxServicos = styled.div`
         display: block;
         margin: 0 0 10px 0;
         }
+`;
+export const ChamdaText = styled.div`
+    text-align: center;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin:30px auto 15px auto;
+
+    h2,
+    p{
+    color: white;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+`;
+export const Detalheright = styled.div`
+    display: block;
+    height: 4px;
+    width: 20px;
+    background: white;
+    border-radius: 30px;
+    margin: 8px 65px 0 0;
+    float: right;
+
+    :before{
+        content: '';
+        display: block;
+        height: 4px;
+        width: 60px;
+        background: white;
+        border-radius: 30px;
+        margin:0 0 0 25px;
+    }
+`;
+
+export const FlexContainerGrid = styled.div`
+    margin:0 auto;
+    max-width: 1140px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0 15px;
+`;
+
+export const BoxDiferencial = styled.div`
+    text-align: center;
+    width: 100%;
+    max-width: 356px;
+    margin: 15px 10px;
+    padding: 30px 20px;
+    align-content: center;
+
+    :nth-child(1),
+    :nth-child(4){
+        margin-left: 0;
+    }
+    :nth-child(3),
+    :nth-child(6){
+        margin-right: 0;
+    }
+
+    span,
+    h3,
+    p{
+        color: white;
+    }
+
+    span{
+        background: #190936;
+        padding: 20px 30px;
+        display: inline-flex;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
+
+    h3{
+        font-size: 1.3rem;
+    }
+
+    p{
+        line-height: 22px;
+        letter-spacing: 1px;
+        margin-top: 15px;
+        text-align: justify;
+    }
+`;
+
+export const DepoimentoItem = styled.div`
+    border: 1px solid #21093b;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 30px 10px;
+    -webkit-box-shadow: 10px 10px 16px -5px rgba(0,0,0,0.4);
+    -moz-box-shadow: 10px 10px 16px -5px rgba(0,0,0,0.4);
+    box-shadow: 10px 10px 16px -5px rgba(126, 94, 94, 0.4);
+`;
+
+export const TopDepo = styled.div`
+    display: flex;
+`;
+export const Infos = styled.div`
+    margin: 25px 0 0 20px;
+
+    span,
+    small{
+        display: block;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-weight: 300;
+    }
+
+    span{
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 25px;
+    }
+    small{
+        font-size: 1.1rem;
+    }
+`;
+export const Stars = styled.ul`
+    display: flex;
+    margin-top: 5px;
+
+    li{
+        margin:0 3px 0 0;
+    }
+`;
+export const Depoimento = styled.p`
+    margin: 20px 0 0 0;
+    display: block;
 `;

@@ -10,8 +10,8 @@ class Navbar extends Component{
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/">Sobre nós</Link></li>
                     <li><Link to="/">Serviços</Link></li>
-                    <li><Link to="/">Cases</Link></li>
-                    <li><Link to="/">Blog</Link></li>
+                    {/* <li><Link to="/">Cases</Link></li>
+                    <li><Link to="/">Blog</Link></li> */}
                     <li><Link to="/">Contato</Link></li>
                 </ul>
             </Mainnav>

@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import BannerTopo from './HomeProps';
+import BannerTopo from './BannerTopo';
 import BoxTextMidTxt from './SobreProps';
 import BoxServicosTxt from './SobreBoxProps';
+import BoxDiferencialItem from './BoxDiferencialItem';
 
-import { Bgwrapper, Flexcontainer, Col, BoxTextTop, BoxImgTop, SectionWhite, GridBox, BoxTextMid } from './styles';
+import Depoimentos from './Depoimentos';
+
+import { Bgwrapper, Flexcontainer, Col, BoxTextTop, BoxImgTop, SectionWhite, GridBox, BoxTextMid, ChamdaText, Detalheright, FlexContainerGrid } from './styles';
 
 import HomemFoguete from '../../assets/images/01.png';
 import DevSites from '../../assets/images/icons/1.png';
 import DevApps from '../../assets/images/icons/2.png';
+
 
 
 class Home extends Component{
@@ -71,6 +75,55 @@ class Home extends Component{
                     </Col>
                 </Flexcontainer>
             </SectionWhite>
+
+            <Bgwrapper className="bg-dif">
+                <Flexcontainer>
+                    <ChamdaText>
+                        <h2>Nossos Diferenciais</h2>
+                        <p>Nossa preocupação é com o que você precisa!</p>
+                        <Detalheright></Detalheright>
+                    </ChamdaText>
+                </Flexcontainer>
+
+                <FlexContainerGrid>
+                    <BoxDiferencialItem
+                        number="1"
+                        titulo="Valorizamos Seu Dinheiro"
+                        descricao="Converse com o nosso especialista para entender sua real necessidade sem gastar nada a mais por isso."
+                    />
+                    <BoxDiferencialItem
+                        number="2"
+                        titulo="Credibilidade"
+                        descricao="Visite nossos cases para entender como trabalhamos e ter uma ideia da nossa qualidade."
+                    />
+                    <BoxDiferencialItem
+                        number="3"
+                        titulo="Preço Justo"
+                        descricao="Nosso foco é a qualidade do projeto visando atender todas as suas necessidades."
+                    />
+                    <BoxDiferencialItem
+                        number="4"
+                        titulo="Agilidade"
+                        descricao="Focamos em um desenvolvimento ágil e com qualidade por possuímos nossa próprimas ferramentas."
+                    />
+                    <BoxDiferencialItem
+                        number="5"
+                        titulo="Design Exclusivo"
+                        descricao="Focamos em ter projetos com designs unicos e exclusivos por isso desenhamos todos os nosso projetos do zero."
+                    />
+                    <BoxDiferencialItem
+                        number="6"
+                        titulo="Otimizado"
+                        descricao="Todos os nossos produtos são otimizados para todas as plataformas de busca com foco organico."
+                    />
+                </FlexContainerGrid>
+            </Bgwrapper>
+
+            <FlexContainerGrid>
+                <Depoimentos/>
+            </FlexContainerGrid>
+
+
             </main>
         );
     }
@@ -78,42 +131,5 @@ class Home extends Component{
 
 export default Home;
 
-{/* <section class="section-white">
-<div class="flex-container">
-    <div class="col">
-        <div class="boxTextMid">
-            <div class="detalheleftcolor"></div>
-            <h2>O que fazemos?</h2>
-            <h3>Focamos nosso desenvolvimento <br>
-                nas <strong>suas necessidades.</strong> 🤗</h3>
-            <a href="" class="btn full">Conheça Nossa Agência!</a>
-        </div>
-    </div>
-    <div class="col">
-        <div class="gridBox">
-            <div class="item">
-                <div class="boxServicos bgserv1">
-                    <img src="assets/images/icons/1.png" alt="Desenvolvimento de Sites">
-                    <span>Desenvolvimento
-                            de Web Sites</span>
-                    <p>Sites Responsivos e Administráveis
-                            com Wordpress, sistema de chat,
-                            Whatsapp, Analytics
-                            e mais...</p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="boxServicos bgserv2">
-                    <img src="assets/images/icons/2.png" alt="Desenvolvimento de Apps Híbridos">
-                    <span>Desenvolvimento
-                            de Apps</span>
-                    <p>Aplicativos multi plataformas com
-                            agilidade e qualidade com o custo
-                            reduzido focado na conversão que você precisa.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</section> */}
+
 
