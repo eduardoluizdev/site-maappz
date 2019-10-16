@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Routes from './componets/Routes'
+import { toggleIcon } from './componets/Navbar/ToggleNav';
 
-function App() {
-  return (
-    <Routes />
-  );
+
+class App extends Component{
+
+  componentDidMount() {
+    toggleIcon();
+  }
+  render(){
+    return(
+      <Routes />
+    );
+  }
 }
+
 
 export default App;

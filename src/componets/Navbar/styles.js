@@ -46,6 +46,9 @@ export const Mainnav = styled.nav`
             }
         }
     }
+    .active{
+        display: block;
+    }
     @media (max-width:980px){
         width: 100%;
         position: absolute;
