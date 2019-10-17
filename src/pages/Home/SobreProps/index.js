@@ -6,7 +6,7 @@ const BoxTextMidTxt = (props) => {
         <BoxTextMid>
             <Detalheleftcolor></Detalheleftcolor>
             <h2>{props.titulo}</h2>
-            <h3>{props.descricao}</h3>
+            <h3>{props.descricao} <br/> <strong>{props.destaqueDescricao}</strong></h3>
         </BoxTextMid>
     );
 }

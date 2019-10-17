@@ -1,11 +1,15 @@
 import React from 'react';
 import NaiaraMotta from './naiaramotta';
+import RafaelRosa from './rafaelrosa';
+
+import { FlexContainerGrid } from '../styles';
 
 const Depoimentos = (props) => {
     return(
-        <div>
+        <FlexContainerGrid>
             <NaiaraMotta></NaiaraMotta>
-        </div>
+            <RafaelRosa></RafaelRosa>
+        </FlexContainerGrid>
     );
 }
 

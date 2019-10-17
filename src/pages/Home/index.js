@@ -7,13 +7,14 @@ import BoxServicosTxt from './SobreBoxProps';
 import BoxDiferencialItem from './BoxDiferencialItem';
 
 import Depoimentos from './Depoimentos';
+import Clientes from './Clientes';
+import CTAContato from '../../componets/CTAContato';
 
-import { Bgwrapper, Flexcontainer, Col, BoxTextTop, BoxImgTop, SectionWhite, GridBox, BoxTextMid, ChamdaText, Detalheright, FlexContainerGrid } from './styles';
+import { Bgwrapper, Flexcontainer, Col, BoxTextTop, BoxImgTop, SectionWhite, GridBox, BoxTextMid, ChamdaText, Detalheright, FlexContainerGrid, ChamadaTextColor, Detalherightcolor } from './styles';
 
 import HomemFoguete from '../../assets/images/01.png';
 import DevSites from '../../assets/images/icons/1.png';
 import DevApps from '../../assets/images/icons/2.png';
-
 
 
 class Home extends Component{
@@ -26,10 +27,13 @@ class Home extends Component{
                         <BoxTextTop>
                             <BannerTopo
                                 servico="Desenvolvimento de Sites"
-                                titulo={["Uma solução personalizada para o", <strong> seu negócio!</strong>]}
-                                descricao={["Nosso desenvolvimento tem como foco seu público alvo, priorizando sempre o mais imporante", <strong> para você!</strong>, " 👊"]}
+                                titulo="Uma solução personalizada para o"
+                                destaqueTitulo="seu negócio!"
+                                descricao="Nosso desenvolvimento tem como foco seu público alvo, priorizando sempre o mais imporante"
+                                destaqueDescricao="para você! 👊"
                                 />
-                            <Link to="/" className="btn">Solicite seu Orçamento!</Link>
+                            {/* <Link to="/" className="btn">Solicite seu Orçamento!</Link> */}
+                            <a href="http://bit.ly/maappzorcamento" target="_blank" rel="noopener noreferrer" className="btn">Solicite seu Orçamento!</a>
                         </BoxTextTop>
                     </Col>
 
@@ -41,13 +45,15 @@ class Home extends Component{
                 </Flexcontainer>
             </Bgwrapper>
 
+
             <SectionWhite>
                 <Flexcontainer>
                     <Col>
                         <BoxTextMid>
                             <BoxTextMidTxt
                                 titulo="O que fazemos?"
-                                descricao={["Focamos nosso desenvolvimento", <br/>, "nas", <strong> suas necessidades.</strong>, " 🤗"]}
+                                descricao="Focamos nosso desenvolvimento"
+                                destaqueDescricao=" nas suas necessidades. 🤗"
                             />
                         <Link to="/sobre-nos/" className="btn full">Conheça Nossa Agência!</Link>
                         </BoxTextMid>
@@ -119,9 +125,29 @@ class Home extends Component{
                 </FlexContainerGrid>
             </Bgwrapper>
 
+            <Flexcontainer>
+                <ChamadaTextColor>
+                    <h2>Depoimentos</h2>
+                    <p>O que nossos clientes falam :)</p>
+                    <Detalherightcolor></Detalherightcolor>
+                </ChamadaTextColor>
+            </Flexcontainer>
+
+            <Depoimentos/>
+
+            <Flexcontainer>
+                <ChamadaTextColor>
+                    <h2>Nossos Clientes</h2>
+			        <p>Sonhamos junto <strong>com você </strong>:)</p>
+                    <Detalherightcolor></Detalherightcolor>
+                </ChamadaTextColor>
+            </Flexcontainer>
+
             <FlexContainerGrid>
-                <Depoimentos/>
+                <Clientes/>
             </FlexContainerGrid>
+
+            <CTAContato/>
 
 
             </main>
@@ -130,6 +156,3 @@ class Home extends Component{
 }
 
 export default Home;
-
-
-

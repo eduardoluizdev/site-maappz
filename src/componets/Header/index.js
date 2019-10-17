@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Heade } from './styles';
+import { Heade, BgHeader } from './styles';
 
 import Navbar from '../Navbar';
 import Logo from '../Logo';
@@ -7,10 +7,12 @@ import Logo from '../Logo';
 class Header extends Component{
     render(){
         return(
-            <Heade>
-                <Logo />
-                <Navbar />
-            </Heade>
+            <BgHeader>
+                <Heade>
+                    <Logo />
+                    <Navbar />
+                </Heade>
+            </BgHeader>
         );
     }
 }

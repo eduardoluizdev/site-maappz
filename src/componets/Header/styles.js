@@ -6,9 +6,10 @@ export const Heade = styled.header`
     align-items: center;
     background:;
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    margin:0 auto;
     padding: 20px 50px;
+`;
+export const BgHeader = styled.div`
+    background: #080a1f;
 `;
 

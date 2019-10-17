@@ -6,24 +6,24 @@ import { Star } from 'styled-icons/boxicons-solid/Star';
 
 import Foto from '../../../assets/images/depo.png'
 
-const NaiaraMotta = (props) => {
+const RafaelRosa = (props) => {
     return(
         <Col>
             <DepoimentoItem>
                 <TopDepo>
                     <img src={Foto} alt="Foto Naiara Motta | Nadecora" width="125" height="125"/>
                     <Infos>
-                    <span>Naiara Motta</span>
-                    <small>Nadecora - www.nadecorarj.com.br</small>
+                    <span>Rafael Rosa</span>
+                    <small>BuzzyRocks - www.buzzy.rocks</small>
                     <Stars>
                         <li><Star/></li><li><Star/></li><li><Star/></li><li><Star/></li><li><Star/></li>
                     </Stars>
                     </Infos>
                 </TopDepo>
-                <Depoimento>A Maappz me ajudou a enxergar o meu público alvo, focou no que realmente importa e com isso estou conseguindo alcançar meus objetivos.</Depoimento>
+                <Depoimento>Trabalho como desenvolvedor e estava com problemas em conseguir novos clientes, a Maappz me ajudou anuncinar meus serviços de forma eficaz.</Depoimento>
             </DepoimentoItem>
         </Col>
     );
 }
 
-export default NaiaraMotta;
+export default RafaelRosa;

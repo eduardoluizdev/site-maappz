@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import bg01 from '../../assets/images/bg01.png';
 
+
+
 export const Bgwrapper = styled.section`
     background: url(${bg01}) center top no-repeat;
     width: 100%;
@@ -9,6 +11,10 @@ export const Bgwrapper = styled.section`
     .bg-dif{
         background-position: center -800px;
         padding-bottom: 20px;
+    }
+
+    @media (max-width:980px){
+        background: linear-gradient(#090b20 0%, #21093b 100%);
     }
 `;
 
@@ -49,6 +55,9 @@ export const BoxTextTop = styled.div`
     h3 {
         font-weight: 300;
         font-size: 1.1rem;
+        strong{
+            font-weight: 700;
+        }
     }
     .btn{
         padding: 15px 20px;
@@ -111,6 +120,11 @@ export const SectionWhite = styled.div`
     background: white;
     padding: 50px 0;
     margin:50px 0;
+
+    @media (max-width:980px){
+        margin: 0;
+        padding: 0;
+    }
 `;
 export const BoxTextMid = styled.div`
     margin: 60px 0 0 0;
@@ -155,6 +169,10 @@ export const BoxTextMid = styled.div`
             background: transparent !important;
             border: 1px solid #24093e;
         }
+    }
+
+    strong{
+        font-weight:700;
     }
 
     @media (max-width:980px){
@@ -277,6 +295,12 @@ export const FlexContainerGrid = styled.div`
     flex-flow: row wrap;
     justify-content: space-around;
     padding: 0 15px;
+
+    @media (max-width:980px){
+        div{
+            width: 100%;
+        }
+    }
 `;
 
 export const BoxDiferencial = styled.div`
@@ -335,6 +359,16 @@ export const DepoimentoItem = styled.div`
 
 export const TopDepo = styled.div`
     display: flex;
+
+    @media (max-width:980px){
+        flex-direction: column;
+        text-align: center;
+
+        img{
+            display: block;
+            margin:0 auto;
+        }
+    }
 `;
 export const Infos = styled.div`
     margin: 25px 0 0 20px;
@@ -354,6 +388,10 @@ export const Infos = styled.div`
     small{
         font-size: 1.1rem;
     }
+
+    @media (max-width:980px){
+
+    }
 `;
 export const Stars = styled.ul`
     display: flex;
@@ -361,9 +399,74 @@ export const Stars = styled.ul`
 
     li{
         margin:0 3px 0 0;
+
+        svg{
+            max-width: 20px;
+        }
+    }
+
+    @media (max-width:980px){
+        align-content: center;
+        justify-content: center;
     }
 `;
 export const Depoimento = styled.p`
     margin: 20px 0 0 0;
     display: block;
+
+    @media (max-width:980px){
+        text-align: center;
+    }
+`;
+export const ChamadaTextColor = styled.div`
+    text-align: center;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin:30px auto 15px auto;
+
+    h2,
+    p{
+        color: #140526;
+    }
+    h2 {
+        font-size: 2.5rem;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+    p strong{
+        font-weight:700;
+    }
+`;
+export const Detalherightcolor = styled.div`
+    display: block;
+    height: 4px;
+    width: 20px;
+    background: #140526;
+    border-radius: 30px;
+    margin: 8px 65px 0 0;
+    float: right;
+
+    :before{
+        content: '';
+        display: block;
+        height: 4px;
+        width: 60px;
+        background: #140526;
+        border-radius: 30px;
+        margin:0 0 0 25px;
+    }
+`;
+export const ListaClientes = styled.ul`
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+
+    li{
+        margin: 10px;
+        align-content: center;
+        -webkit-box-shadow: 10px 10px 16px -5px rgba(0,0,0,0.4);
+        -moz-box-shadow: 10px 10px 16px -5px rgba(0,0,0,0.4);
+        box-shadow: 10px 10px 16px -5px rgba(126, 94, 94, 0.4);
+    }
 `;
