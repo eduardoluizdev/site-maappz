@@ -23,6 +23,7 @@ export const Mainnav = styled.nav`
                     border-radius: 3px;
                     color: #24093e;
                     padding: 10px 20px;
+                    outline: 0;
 
                     :hover{
                         background: #ff225f;
@@ -38,6 +39,7 @@ export const Mainnav = styled.nav`
                 padding: 10px;
                 transition: all .3s;
                 border:1px solid transparent;
+                outline: 0;
 
                 :hover{
                     border:1px solid white;

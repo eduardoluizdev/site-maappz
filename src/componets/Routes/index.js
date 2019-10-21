@@ -10,17 +10,28 @@ import Header from '../Header';
 import Footer from '../Footer';
 import { GlobalStyle } from '../../global';
 
+import {
+    CSSTransition,
+    TransitionGroup,
+  } from 'react-transition-group';
+
 const Routes = () => {
     return(
         <BrowserRouter>
             <GlobalStyle></GlobalStyle>
             <Header />
-            <Switch>
-                <Route exact path="/" component={Home}/>
-                <Route exact path="/sobre-nos" component={Sobre}/>
-                <Route exact path="/criacao-de-site" component={CriacaodeSites}/>
-                <Route exact path="/contato" component={Contato}/>
-            </Switch>
+            <Route render={({location}) => (
+                <TransitionGroup>
+                    <CSSTransition key={location.key} timeout={100}  classNames="fade">
+                        <Switch location={location}>
+                            <Route exact path="/" component={Home}/>
+                            <Route exact path="/sobre-nos" component={Sobre}/>
+                            <Route exact path="/criacao-de-site" component={CriacaodeSites}/>
+                            <Route exact path="/contato" component={Contato}/>
+                        </Switch>
+                    </CSSTransition>
+                </TransitionGroup>
+            )} />
             <Footer />
         </BrowserRouter>
     );

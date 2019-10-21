@@ -12,7 +12,7 @@ class BreadSobre extends Component{
     render(){
         return(
             <BgBread>
-                <ol typeof="v:Breadcrumb" class="breadcrumb">
+                <ol typeof="v:Breadcrumb" className="breadcrumb">
                     <li><Link to="/" rel="v:url" property="v:title" title="Criação de Sites"><Home/> Home</Link></li>
                     <li class="active">Sobre nós</li>
                 </ol>

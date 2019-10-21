@@ -32,4 +32,24 @@ export const GlobalStyle = createGlobalStyle`
         position: relative;
         top: -2px;
     }
+
+    .fade-appear,
+    .fade-enter {
+        opacity: 0;
+        z-index: 1;
+    }
+    .fade-appear-active,
+    .fade-enter.fade-enter-active {
+        opacity: 1;
+        transition: opacity 1s linear 150ms;
+    }
+
+    .fade-exit {
+        opacity: 1;
+    }
+
+    .fade-exit.fade-exit-active {
+        opacity: 0;
+        transition: opacity 150ms linear;
+    }
 `

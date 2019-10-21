@@ -1,18 +1,17 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 import Routes from './componets/Routes'
 import { toggleIcon } from './componets/Navbar/ToggleNav';
 
 
-class App extends Component{
+function App(){
 
-  componentDidMount() {
+  useEffect(() => {
     toggleIcon();
-  }
-  render(){
-    return(
-      <Routes />
-    );
-  }
+  });
+
+  return(
+    <Routes />
+  );
 }
 
 
