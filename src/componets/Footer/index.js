@@ -19,10 +19,10 @@ class Footer extends Component{
         super(props);
         this.state = {
             linksSociais: [
-                {id:1, icon:<Facebook/>, url:"https://www.facebook.com/maappz/"},
-                {id:2, icon:<Twitter/>, url:"https://twitter.com/maappz/"},
-                {id:3, icon:<Instagram/>, url:"https://www.instagram.com/maappz.web/"},
-                {id:4, icon:<Github/>, url:"https://github.com/eduardoluizmaappz/"}
+                {id:1, title:'Facebook Maappz', icon:<Facebook/>, url:"https://www.facebook.com/maappz/"},
+                {id:2, title:'Twitter Maappz', icon:<Twitter/>, url:"https://twitter.com/maappz/"},
+                {id:3, title:'Instagram  Maappz', icon:<Instagram/>, url:"https://www.instagram.com/maappz.web/"},
+                {id:4, title:'Github Maappz', icon:<Github/>, url:"https://github.com/eduardoluizmaappz/"}
             ]
         }
     }
@@ -36,7 +36,9 @@ class Footer extends Component{
                         <ul>
                             <li><Link to="/" title="Maappz | Criação de Sites">Home</Link></li>
                             <li><Link to="/sobre-nos/" title="Sobre Nós">Sobre nós</Link></li>
-                            <li><Link to="/contato/" title="Contato">Contato</Link></li>
+                            <li><a href="http://bit.ly/maappzorcamento" target="_blank" rel="noopener noreferrer" title="Entre em contato através do nosso whatsapp!" className="WhatsLink">Maappz no Whats!</a></li>
+
+                            {/* <li><Link to="/contato/" title="Contato">Contato</Link></li> */}
                         </ul>
                     </ColFooter>
                     <ColFooter>
@@ -55,7 +57,7 @@ class Footer extends Component{
                     <form action="">
                         <strong>Se inscreva para receber nossas novidades!</strong>
                         <GroupIpt>
-                            <input type="text" name="email" placeholder="Insira seu e-mail..." required />
+                            <input type="text" name="email" placeholder="Insira seu e-mail..." required title="Email para Newsletter" />
                             <button type="submit"><Rocket/> Enviar</button>
                         </GroupIpt>
                     </form>
@@ -64,7 +66,7 @@ class Footer extends Component{
                         <li><strong>Acomanhe a Maappz nas Mídias Sociais:</strong></li>
                         {this.state.linksSociais.map((linkSocial) =>{
                             return(
-                                <li key={linkSocial.id}><a href={linkSocial.url} className="btn" target="_blank" rel="noopener noreferrer">{linkSocial.icon}</a></li>
+                                <li key={linkSocial.id}><a href={linkSocial.url} className="btn" target="_blank" rel="noopener noreferrer" title={linkSocial.title}>{linkSocial.icon}</a></li>
                             );
                         })}
                     </SocialLinks>

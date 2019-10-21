@@ -4,7 +4,7 @@ import { Col, DepoimentoItem, TopDepo, Infos, Stars, Depoimento } from '../style
 
 import { Star } from 'styled-icons/boxicons-solid/Star';
 
-import Foto from '../../../assets/images/depo.png'
+import Foto from '../../../assets/images/naiara.png'
 
 const NaiaraMotta = (props) => {
     return(

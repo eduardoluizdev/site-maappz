@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+import SeoInfos from '../../componets/Seo';
+
 import BannerTopo from './BannerTopo';
 import BoxTextMidTxt from './SobreProps';
 import BoxServicosTxt from './SobreBoxProps';
@@ -12,15 +14,21 @@ import CTAContato from '../../componets/CTAContato';
 
 import { Bgwrapper, Flexcontainer, Col, BoxTextTop, BoxImgTop, SectionWhite, GridBox, BoxTextMid, ChamdaText, Detalheright, FlexContainerGrid, ChamadaTextColor, Detalherightcolor } from './styles';
 
-import HomemFoguete from '../../assets/images/01.png';
-import DevSites from '../../assets/images/icons/1.png';
-import DevApps from '../../assets/images/icons/2.png';
+import DestaqueHomeBanner from '../../assets/images/img-home.svg';
+import DevSites from '../../assets/images/web.svg';
+import DevApps from '../../assets/images/app.svg';
 
 
 class Home extends Component{
     render(){
         return(
             <main>
+            <SeoInfos 
+                title="Home - Maappz Criação de Sites"
+                description="Nosso desenvolvimento tem como foco seu público alvo, priorizando sempre o mais imporante para você!"
+                keywords="Criação de sites, Sites, Web Site, Criar Sites, Web Design, Web Designer, Web Master, Desenvolvimento, Desenvolvimento de Sites, Front-end, Back-end, ReactJS, Criação de Sites RJ, Criação de Sites Rio de Janeiro, Criação de Sites no Rio de Janeiro"
+                canonical="https://www.maappz.com.br/"
+            />
             <Bgwrapper>
                 <Flexcontainer>
                     <Col>
@@ -39,7 +47,7 @@ class Home extends Component{
 
                     <Col>
                         <BoxImgTop>
-                            <img src={HomemFoguete} alt="Homem Foguete"/>
+                            <img src={DestaqueHomeBanner} alt="Imagem sobre progresso e sucesso!"/>
                         </BoxImgTop>
                     </Col>
                 </Flexcontainer>

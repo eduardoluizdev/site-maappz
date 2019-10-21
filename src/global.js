@@ -22,4 +22,14 @@ export const GlobalStyle = createGlobalStyle`
         box-shadow: 10px 10px 16px -5px rgba(126, 94, 94, 0.4);
         margin-top: 80px;
     }
+    .marginall{
+        margin:20px;
+    }
+
+    .WhatsLink svg{
+        width: 25px;
+        height: 25px;
+        position: relative;
+        top: -2px;
+    }
 `

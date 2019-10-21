@@ -33,19 +33,20 @@ export const LinksCTA = styled.ul`
 
         a{
             color: white;
+            font-weight: 700;
 
             svg{
-                max-width: 25px;
+                width: 20px;
                 margin: 0 10px 0 0;
             }
         }
         :nth-child(2) a{
-            background: #34af23;
-            border:1px solid #34af23;
+            background: rgb(255, 34, 95);
+            border:1px solid rgb(255, 34, 95);
         }
 
         .btn{
-            padding: 15px 15px;
+            padding: 15px 10px;
             display: flex;
             justify-content: center;
             margin: 15px 0;
@@ -59,6 +60,19 @@ export const LinksCTA = styled.ul`
                 background: white;
                 border: 1px solid transparent;
                 color: #190936;
+            }
+        }
+    }
+
+    @media(max-width: 980px){
+        flex-wrap: wrap;
+
+        li{
+            width: 100%;
+            margin:0;
+
+            .btn{
+                max-width: 100%;
             }
         }
     }

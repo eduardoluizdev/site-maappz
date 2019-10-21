@@ -7,6 +7,7 @@ export const Bgwrapper = styled.section`
     background: url(${bg01}) center top no-repeat;
     width: 100%;
     min-height: 400px;
+    overflow:hidden;
 
     .bg-dif{
         background-position: center -800px;
@@ -15,6 +16,7 @@ export const Bgwrapper = styled.section`
 
     @media (max-width:980px){
         background: linear-gradient(#090b20 0%, #21093b 100%);
+        overflow:initial;
     }
 `;
 
@@ -79,7 +81,7 @@ export const BoxTextTop = styled.div`
 
     @media (max-width:980px){
         text-align: center;
-        margin-top: 140px;
+        margin-top: 50px;
 
         .btn{
             max-width: 100%;
@@ -89,13 +91,24 @@ export const BoxTextTop = styled.div`
 export const BoxImgTop = styled.div`
 
     img{
-        display: block;
-        margin:100px auto 0  auto;
+        position: absolute;
+        top: 0;
+        width: 600px;
+        margin:100px 0 0 0;
+
+    @media (max-width:1240px){
+            position: absolute;
+            top: 0;
+            width: 440px;
+            margin: 180px 0 0 0;
+    }
 
     @media (max-width:980px){
-        img {
-            margin: 50px auto 0 auto;
-        }
+        position: relative;
+        top: 30px;
+        width: 320px;
+        margin: 0 auto;
+    }
     }
 `;
 export const Detalheleft = styled.div`
@@ -239,6 +252,16 @@ export const BoxServicos = styled.div`
     img{
         display: block;
         margin:0 auto 15px auto;
+        max-width: 110px;
+        color: white;
+        fill: white;
+    }
+    svg{
+        width:60px;
+        height: 60px;
+        margin: 0 auto 15px auto;
+        fill: white;
+        color: white;
     }
     span,
     p{

@@ -11,7 +11,7 @@ export const FooterDiv = styled.footer`
 `;
 export const ColFooter = styled.div`
     strong,
-    li a,
+    a,
     .newsLetter strong{
         color: white;
     }
@@ -23,7 +23,8 @@ export const ColFooter = styled.div`
 
         li{
             a{
-                margin:3px 0;
+                padding: 10px 0;
+                display: block;
             }
         }
     }
@@ -63,7 +64,6 @@ export const GroupIpt = styled.div`
             width: 19px;
             height: 19px;
             margin:0 5px 0 0;
-            background: url(../images/icons/rocket.png) center top no-repeat;
         }
     }
 `;
@@ -95,6 +95,12 @@ export const SocialLinks = styled.ul`
                 background: #ff225f;
                 border-color: #ff225f;
             }
+
+            svg{
+                width: 20px;
+                margin: 0 auto;
+                display: block;
+            }
         }
     }
 
@@ -106,6 +112,9 @@ export const SocialLinks = styled.ul`
             strong{
                 display: block;
                 text-align: center;
+            }
+            :first-child{
+                width:100%;
             }
         }
     }

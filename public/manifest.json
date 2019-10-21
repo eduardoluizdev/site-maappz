@@ -18,8 +18,23 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#190936",
+  "background_color": "#ffffff",
+  "@context": "https://schema.org",
+    "@type": "Organization",
+    "url": "https://www.maappz.com.br",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+55-21-96532-7807",
+      "contactType": "Customer service"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "268",
+      "bestRating": "5",
+      "worstRating": "1"
+      }
 }
