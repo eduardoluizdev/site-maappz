@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
+// import {Link} from 'react-router-dom';
 
-import SeoInfos from '../../componets/Seo';
+import SeoInfos from './seo';
 
 import BannerTopo from '../Home/BannerTopo';
 import Infos from './Infos';
 
 import BoxDiferencialItem from '../Home/BoxDiferencialItem';
 
-import BreadSobre from '../../componets/Breadcrumbs/breadSobre';
 
 import { Bgwrapper, Flexcontainer, Col, BoxTextTop, BoxImgTop, SectionWhite, ChamdaText, FlexContainerGrid, Detalheright } from '../Home/styles';
 
@@ -17,7 +17,14 @@ import DestaqueHomeBanner from '../../assets/images/img-sobre.png';
 
 import CTAContato from '../../componets/CTAContato';
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
+import BreadSobre from '../../componets/Breadcrumbs/breadSobre'
+
+
 class Sobre extends Component{
+
     render(){
         return(
             <main>
@@ -43,13 +50,18 @@ class Sobre extends Component{
 
                     <Col>
                         <BoxImgTop>
-                            <img src={DestaqueHomeBanner} alt="Imagem sobre progresso e sucesso!"/>
+                            <LazyLoadImage
+                            alt="Imagem sobre progresso e sucesso!"
+                            height="500"
+                            effect="blur"
+                            src={DestaqueHomeBanner}
+                            width="500" />
                         </BoxImgTop>
                     </Col>
                 </Flexcontainer>
             </Bgwrapper>
 
-            <BreadSobre></BreadSobre>
+            <BreadSobre/>
 
             <SectionWhite>
                 <Flexcontainer>

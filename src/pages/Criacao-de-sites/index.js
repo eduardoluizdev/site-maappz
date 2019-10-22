@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import SeoInfos from '../../componets/Seo';
+import SeoInfos from './seo';
 
 import BannerTopo from '../Home/BannerTopo';
 import BoxTextMidTxt from '../Home/SobreProps';
@@ -20,6 +20,9 @@ import { BoxServicosFull } from './styles';
 import DestaqueHomeBanner from '../../assets/images/img-sites.png';
 
 import CTAContato from '../../componets/CTAContato';
+
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 class CriacaodeSites extends Component{
     render(){
@@ -49,7 +52,12 @@ class CriacaodeSites extends Component{
 
                     <Col>
                         <BoxImgTop>
-                            <img src={DestaqueHomeBanner} alt="Imagem sobre progresso e sucesso!"/>
+                        <LazyLoadImage
+                            alt="Imagem sobre progresso e sucesso!"
+                            height="500"
+                            effect="blur"
+                            src={DestaqueHomeBanner}
+                            width="500" />
                         </BoxImgTop>
                     </Col>
                 </Flexcontainer>

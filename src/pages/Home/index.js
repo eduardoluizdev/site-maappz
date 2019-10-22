@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import SeoInfos from '../../componets/Seo';
+import SeoInfos from './seo';
 
 import BannerTopo from './BannerTopo';
 import BoxTextMidTxt from './SobreProps';
@@ -11,6 +11,9 @@ import BoxDiferencialItem from './BoxDiferencialItem';
 import Depoimentos from './Depoimentos';
 import Clientes from './Clientes';
 import CTAContato from '../../componets/CTAContato';
+
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import { Bgwrapper, Flexcontainer, Col, BoxTextTop, BoxImgTop, SectionWhite, GridBox, BoxTextMid, ChamdaText, Detalheright, FlexContainerGrid, ChamadaTextColor, Detalherightcolor } from './styles';
 
@@ -47,7 +50,12 @@ class Home extends Component{
 
                     <Col>
                         <BoxImgTop>
-                            <img src={DestaqueHomeBanner} alt="Imagem sobre progresso e sucesso!"/>
+                            <LazyLoadImage
+                            alt="Imagem sobre progresso e sucesso!"
+                            height="500"
+                            effect="blur"
+                            src={DestaqueHomeBanner}
+                            width="500" />
                         </BoxImgTop>
                     </Col>
                 </Flexcontainer>

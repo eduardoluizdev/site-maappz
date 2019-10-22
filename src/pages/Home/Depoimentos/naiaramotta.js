@@ -4,14 +4,22 @@ import { Col, DepoimentoItem, TopDepo, Infos, Stars, Depoimento } from '../style
 
 import { Star } from 'styled-icons/boxicons-solid/Star';
 
-import Foto from '../../../assets/images/naiara.png'
+import Foto from '../../../assets/images/naiara.png';
+
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const NaiaraMotta = (props) => {
     return(
         <Col>
             <DepoimentoItem>
                 <TopDepo>
-                    <img src={Foto} alt="Foto Naiara Motta | Nadecora" width="125" height="125"/>
+                    <LazyLoadImage
+                            alt="Foto Naiara Motta | Nadecora"
+                            height="125"
+                            effect="blur"
+                            src={Foto}
+                            width="125" />
                     <Infos>
                     <span>Naiara Motta</span>
                     <small>Nadecora - www.nadecorarj.com.br</small>

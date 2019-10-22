@@ -3,20 +3,20 @@ import { Link } from 'react-router-dom';
 
 import {Home} from 'styled-icons/boxicons-solid/Home';
 
-import { BgBread } from './styled';
+import { BgBreadNF } from './styled';
 
-class BreadCriacaodeSites extends Component{
+class BreadNFound extends Component{
 
     render(){
         return(
-            <BgBread>
+            <BgBreadNF>
                 <ol className="breadcrumb">
                     <li><Link to="/" title="Criação de Sites"><Home/> Home</Link></li>
-                    <li className="active">Criação de Sites</li>
+                    <li className="active">Página não encontrada</li>
                 </ol>
-            </BgBread>
+            </BgBreadNF>
         );
     }
 }
-export default BreadCriacaodeSites;
+export default BreadNFound;
 

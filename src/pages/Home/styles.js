@@ -7,7 +7,7 @@ export const Bgwrapper = styled.section`
     background: url(${bg01}) center top no-repeat;
     width: 100%;
     min-height: 400px;
-    overflow:hidden;
+
 
     .bg-dif{
         background-position: center -800px;
@@ -93,8 +93,9 @@ export const BoxImgTop = styled.div`
     img{
         position: absolute;
         top: 0;
-        width: 600px;
-        margin:100px 0 0 0;
+        max-width: 600px;
+        margin: 60px 0 0 0;
+        height: auto;
 
     @media (max-width:1240px){
             position: absolute;

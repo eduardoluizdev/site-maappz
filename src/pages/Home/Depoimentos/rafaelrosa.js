@@ -4,14 +4,22 @@ import { Col, DepoimentoItem, TopDepo, Infos, Stars, Depoimento } from '../style
 
 import { Star } from 'styled-icons/boxicons-solid/Star';
 
-import Foto from '../../../assets/images/rafael.png'
+import Foto from '../../../assets/images/rafael.png';
+
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const RafaelRosa = (props) => {
     return(
         <Col>
             <DepoimentoItem>
                 <TopDepo>
-                    <img src={Foto} alt="Foto Naiara Motta | Nadecora" width="125" height="125"/>
+                <LazyLoadImage
+                            alt="Foto Rafael Rosa | BuzzyRocks"
+                            height="125"
+                            effect="blur"
+                            src={Foto}
+                            width="125" />
                     <Infos>
                     <span>Rafael Rosa</span>
                     <small>BuzzyRocks - www.buzzy.rocks</small>

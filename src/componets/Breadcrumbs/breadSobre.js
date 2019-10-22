@@ -5,21 +5,18 @@ import {Home} from 'styled-icons/boxicons-solid/Home';
 
 import { BgBread } from './styled';
 
-
 class BreadSobre extends Component{
 
-    // xmlns:v="http://rdf.data-vocabulary.org/#"
     render(){
         return(
             <BgBread>
-                <ol typeof="v:Breadcrumb" className="breadcrumb">
-                    <li><Link to="/" rel="v:url" property="v:title" title="Criação de Sites"><Home/> Home</Link></li>
-                    <li class="active">Sobre nós</li>
+                <ol className="breadcrumb">
+                    <li><Link to="/" title="Criação de Sites"><Home/> Home</Link></li>
+                    <li className="active">Sobre nós</li>
                 </ol>
             </BgBread>
         );
     }
 }
 export default BreadSobre;
-
 
